@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="importmap-type" content="systemjs-importmap">
     <script type="systemjs-importmap" src="./manifest.json"></script>
-    <script src="https://unpkg.com/import-map-overrides@1.7.2/dist/import-map-overrides.js"></script>
+<!--    <script src="https://unpkg.com/import-map-overrides@1.7.2/dist/import-map-overrides.js"></script>-->
     <script src="https://cdn.staticfile.org/systemjs/5.0.0/system.min.js"></script>
     <script src="https://cdn.staticfile.org/systemjs/5.0.0/extras/amd.min.js"></script>
 <!--    <script src="https://cdn.staticfile.org/systemjs/5.0.0/extras/named-exports.min.js"></script>-->
@@ -60,7 +60,8 @@
           singleSpa.registerApplication(
             'monitor',
             () => System.import('monitor'),
-            location => location.pathname.startsWith('/monitor')
+            location => location.pathname.startsWith('/monitor'),
+
           )
 
           singleSpa.registerApplication(
@@ -73,7 +74,8 @@
         })
       })()
     </script>
+    <div id="app"></div>
     <!-- See https://github.com/joeldenning/import-map-overrides#user-interface  -->
-    <import-map-overrides-full show-when-local-storage="overrides-ui"></import-map-overrides-full>
+<!--    <import-map-overrides-full show-when-local-storage="overrides-ui"></import-map-overrides-full>-->
   </body>
 </html>

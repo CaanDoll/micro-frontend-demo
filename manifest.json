@@ -3,8 +3,8 @@
     "single-spa": "https://cdn.staticfile.org/single-spa/4.3.7/system/single-spa.min.js",
     "vue": "https://cdn.staticfile.org/vue/2.6.10/vue.min.js",
     "vue-router": "https://cdn.staticfile.org/vue-router/3.0.7/vue-router.min.js",
-    "portal": "./module/portal/dist/js/app.js",
-    "monitor": "./module/monitor/dist/js/app.js",
-    "stats": "./module/stats/dist/js/app.js"
+    "portal": "./module/portal/dist/js/app.${}.js",
+    "monitor": "./module/monitor/dist/js/app.${}.js",
+    "stats": "./module/stats/dist/js/app.${}.js"
   }
 }

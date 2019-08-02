@@ -9,6 +9,7 @@ Vue.config.productionTip = false;
 const vueLifecycles = singleSpaVue({
   Vue,
   appOptions: {
+    el: '#module',
     router,
     render: (h) => h(App),
   },
@@ -19,7 +20,7 @@ export const mount = vueLifecycles.mount;
 export const unmount = vueLifecycles.unmount;
 
 if(process.env.NODE_ENV !== 'production') {
-  mount('#app');
+  mount({});
 }else{
   require('./set-public-path');
 }

@@ -1,1 +1,1 @@
-__webpack_public_path__ = window.getPublicPath('monitor');
+__webpack_public_path__ = window.getPublicPath('stats');

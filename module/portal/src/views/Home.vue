@@ -10,7 +10,7 @@
       <div class="aside">
 
       </div>
-      <div class="view">
+      <div id="module">
 
       </div>
     </div>
@@ -30,7 +30,7 @@ export default {
     display: flex;
     flex-direction: column;
     .header {
-      height: 30px
+      height: 30px;
       background-color: red;
     }
     .main {
@@ -41,6 +41,7 @@ export default {
         background-color: blue;
       }
       .view {
+        flex: 1;
         background-color: grey;
       }
     }
