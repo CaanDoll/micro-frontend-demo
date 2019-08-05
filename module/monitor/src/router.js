@@ -1,7 +1,8 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import A from './views/A';
 Vue.use(Router)
+// import A from './views/C.vue';
+// import B from './views/D.vue';
 
 export default new Router({
   mode: 'history',
@@ -10,12 +11,14 @@ export default new Router({
     {
       path: '/a',
       name: 'a',
-      component: A
+      component: () => import('./views/A.vue')
+      // component: A
     },
     {
       path: '/b',
       name: 'b',
       component: () => import('./views/B.vue')
+      // component: B
     }
   ]
 })

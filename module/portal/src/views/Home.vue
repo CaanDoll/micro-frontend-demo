@@ -3,8 +3,8 @@
     <div class="header">
       <router-link to="/monitor/a">monitor/a</router-link> |
       <router-link to="/monitor/b">monitor/b</router-link> |
-      <router-link to="/stats/a">stats/a</router-link> |
-      <router-link to="/stats/b">stats/b</router-link>
+      <router-link to="/stats/c">stats/c</router-link> |
+      <router-link to="/stats/d">stats/d</router-link>
     </div>
     <div class="main">
       <div class="aside">

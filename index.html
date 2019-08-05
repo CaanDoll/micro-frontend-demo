@@ -6,7 +6,7 @@
     <title>Micro frontend demo</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="importmap-type" content="systemjs-importmap">
-    <script type="systemjs-importmap" src="./manifest.json"></script>
+    <script type="systemjs-importmap" src="/manifest.json"></script>
 <!--    <script src="https://unpkg.com/import-map-overrides@1.7.2/dist/import-map-overrides.js"></script>-->
     <script src="https://cdn.staticfile.org/systemjs/5.0.0/system.min.js"></script>
     <script src="https://cdn.staticfile.org/systemjs/5.0.0/extras/amd.min.js"></script>
@@ -67,7 +67,9 @@
           singleSpa.registerApplication(
             'stats',
             () => System.import('stats'),
-            location => location.pathname.startsWith('/stats')
+            location => {
+              return location.pathname.startsWith('/stats')
+            }
           )
 
           singleSpa.start();

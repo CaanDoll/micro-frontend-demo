@@ -1,5 +1,5 @@
 <template>
-  <div id="monitor">
+  <div id="module" class="monitor">
     <router-view/>
   </div>
 </template>
